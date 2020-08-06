@@ -39,8 +39,10 @@ a {
 	text-decoration: none;
 	transition: @transition;
 	color: @black;
-	&:hover {
-	}
+}
+a.link {
+	color: @blue;
+	text-decoration: underline;
 }
 input {
 	padding: 10px 5px;
@@ -51,7 +53,7 @@ button {
 	border-radius: @round;
 	border: none;
 	outline: none;
-	background-color: #0095f6;
+	background-color: @blue;
 	color: white;
 	transition: @transition;
 	cursor: pointer;
@@ -76,11 +78,15 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-.container {
+main {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding-top: 50px;
-	min-height:calc(~"100% - 119px");
+	padding: 50px 10px 0 10px;
+	min-height:calc(~"100% - 124px");
+}
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .svg {
 	width: 21px;
@@ -92,4 +98,7 @@ ul {
 }
 .gineso {
 	font-family: Gineso, 'sans-serif';
+}
+.blue {
+	color: @blue;
 }

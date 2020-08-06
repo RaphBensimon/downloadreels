@@ -1,9 +1,9 @@
 <template>
-	<div id="home" class="container">
+	<main id="home">
 		<form v-if="!loading && !url_download" v-on:submit="get_videos()">
-			<input placeholder="Ex: https://www.instagram.com/p/CDYt6BdKgG9/" type="text" v-model="url_video">
+			<input placeholder="Ex: https://www.instagram.com/p/CDYt6BdKgG9/" required type="text" v-model="url_video">
 			<button>
-				Download<span class="gineso" style="margin-left: 3px; transform: translateY(-2px);">REELS</span>
+				Download
 				<img src="@/assets/img/download.svg" alt="Download svg" class=svg>	
 			</button>
 		</form>
@@ -15,7 +15,7 @@
 			<a :href="url_download" target="_blank" id="download"><Button>Download your <span class="gineso">REELS</span></Button></a>
 			<button class="grey">Download another <span class="gineso">REELS</span></button>
 		</div>
-	</div>
+	</main>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ export default {
 	name: 'Home',
 	data() {
 		return {
-			url_video: "https://www.instagram.com/p/CDZutJgK6SK/",
+			url_video: "",
 			url_download: "",
 			error: "",
 			loading: false,
@@ -80,7 +80,7 @@ export default {
 	flex-direction: column;
 }
 form {
-	width: 90%;
+	width: 100%;
 	max-width: 400px;
 	background-color: @white;
 	border-radius: @round;

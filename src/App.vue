@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<header>
-			<a href="/"><h1 class="billabong">Download<span class="gineso"> REELS</span></h1></a>
+			<a href="/"><h1 class="gineso">Download<span class="blue">REELS</span>.com</span></h1></a>
 			<nav :class="{active: nav_active}">
 				<ul>
 					<li>
@@ -36,9 +36,8 @@
 		<router-view/>
 		<footer>
 			<ul>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Terms</a></li>
+				<li><router-link to="/privacy">Privacy</router-link></li>
+				<li><router-link to="/contact">Contact</router-link></li>
 			</ul>
 		</footer>
 	</div>
@@ -163,11 +162,6 @@ header #hamburger.active div {
 	visibility: hidden;
 	transition: @transition;
 }
-#overlay_nav.active {
-	z-index: 1;
-	opacity: 0.5;
-	visibility: visible;
-}
 footer {
 	height: 50px;
 	display: flex;
@@ -215,6 +209,11 @@ footer ul li a {
 	}
 	header #hamburger {
 		display: flex;
+	}
+	#overlay_nav.active {
+		z-index: 1;
+		opacity: 0.5;
+		visibility: visible;
 	}
 }
 </style>

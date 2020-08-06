@@ -1,0 +1,95 @@
+
+@font-face {
+	font-family: Billabong;
+	src: url(../fonts/Billabong.ttf);
+}
+
+@font-face {
+	font-family: Gineso;
+	src: url(../fonts/GinesoSoft-ConReg.ttf);
+}
+@black: #231F20;
+@grey: #DBDBDB;
+@dark_grey: #a8a8a8;
+@dark_white: #FAFAFA;
+@white: #FFFFFF;
+@blue: #0095f6;
+@light_blue: #41aef2;
+@dark_blue: #00376b;
+@red: #ED4956;
+@transition: 0.25s;
+@round: 3px;
+
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	color: @black;
+	background-color: @dark_white;
+}
+a {
+	text-decoration: none;
+	transition: @transition;
+	color: @black;
+	&:hover {
+	}
+}
+input {
+	padding: 10px 5px;
+	border-radius: @round;
+	border: 1px solid @grey;
+}
+button {
+	border-radius: @round;
+	border: none;
+	outline: none;
+	background-color: #0095f6;
+	color: white;
+	transition: @transition;
+	cursor: pointer;
+	&:hover,&:focus {
+		background-color: @light_blue;
+	}
+	&:active {
+		position: relative;
+		top: 2px;
+	}
+}
+button.grey {
+	background-color: @dark_grey;
+	&:hover {
+		background-color: @grey;
+	}
+}
+li {
+	list-style: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 50px;
+	min-height:calc(~"100% - 119px");
+}
+.svg {
+	width: 21px;
+	height: 21px;
+	fill: @black;
+}
+.billabong {
+	font-family: Billabong, 'sans-serif';
+}
+.gineso {
+	font-family: Gineso, 'sans-serif';
+}

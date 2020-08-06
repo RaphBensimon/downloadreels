@@ -1,6 +1,6 @@
 <template>
 	<main id="contact" class="container">
-		<h2>Contact</h2>
+		<h1>Contact</h1>
 		<p>
 			You can contact us by sending a email at :<a class="link" href="mailto:contact@downloadreels.com">contact@downloadreels.com</a>
 		</p>
@@ -14,7 +14,20 @@ export default {
 		return {
 		}
 	},
+	head: {
+		title: function() {
+			return {
+				   inner: this.$route.meta.title,
+				   separator: ' '
+     		}
+		},
+		 meta: function() {
+			 return [
+				{ name: 'description', content: this.$route.meta.description }
+			]
+		}
 
+	},
 }
 </script>
 

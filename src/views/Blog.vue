@@ -11,7 +11,20 @@ export default {
 		return {
 		}
 	},
+	head: {
+		title: function() {
+			return {
+				   inner: this.$route.meta.title,
+				   separator: ' '
+     		}
+		},
+		 meta: function() {
+			 return [
+				{ name: 'description', content: this.$route.meta.description }
+			]
+		}
 
+	},
 }
 </script>
 

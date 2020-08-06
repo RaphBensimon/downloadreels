@@ -7,6 +7,8 @@ import Privacy from '../views/Privacy.vue'
 import Contact from '../views/Contact.vue'
 import error_404 from '../views/error_404.vue'
 
+import VueHead from 'vue-head';
+Vue.use(VueHead)
 Vue.use(VueRouter)
 	const routes = [
 	{
@@ -15,6 +17,7 @@ Vue.use(VueRouter)
 		component: Home,
 		meta: {
 			title: 'Download Reels Instagram',
+			description: 'Download Reels Instagram Free in one click download.'
 		}
 	},
 	{
@@ -23,6 +26,7 @@ Vue.use(VueRouter)
 		component: Blog,
 		meta: {
 			title: 'Download Reels Instagram Blog',
+			description: 'Find the latest Instagram Reels news and updates. Browse featured articles and topics to learn more about what Instagram Reels has to offer.'
 		}
 	},
 	{
@@ -31,6 +35,7 @@ Vue.use(VueRouter)
 		component: How_to_download,
 		meta: {
 			title: 'How to download reels instagram',
+			description: ' How to download Reels Instagram on PC, Android or IOS.'
 		}
 	},
 	{
@@ -39,6 +44,7 @@ Vue.use(VueRouter)
 		component: Privacy,
 		meta: {
 			title: 'Privacy | DownloadReels',
+			description:''
 		}
 	},
 	{
@@ -47,6 +53,7 @@ Vue.use(VueRouter)
 		component: Contact,
 		meta: {
 			title: 'Contact | DownloadReels',
+			description: 'We are here to help you and answer all your requests.'
 		}
 	},
 	{
@@ -55,6 +62,7 @@ Vue.use(VueRouter)
 		component: error_404,
 		meta: {
 			title: '404 | DownloadReels',
+			description:''
 		}
 	}
 ]
@@ -63,8 +71,5 @@ const router = new VueRouter({
 	routes,
 	mode: 'history'
 })
-router.beforeEach((to, from, next) => {
-	document.title = to.meta.title;
-	next();
-});
+
 export default router

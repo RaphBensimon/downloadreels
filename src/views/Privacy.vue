@@ -1,6 +1,6 @@
 <template>
 	<main id="privacy" class="container">
-		<h2>Privacy</h2>
+		<h1>Privacy</h1>
 		<p>
 			No user data is collected because DownloadReels.com doesn't use cookies or databases, it's just a tool to download a reel from instagram.
 			<br>
@@ -16,7 +16,20 @@ export default {
 		return {
 		}
 	},
+	head: {
+		title: function() {
+			return {
+				   inner: this.$route.meta.title,
+				   separator: ' '
+     		}
+		},
+		 meta: function() {
+			 return [
+				{ name: 'description', content: this.$route.meta.description }
+			]
+		}
 
+	},
 }
 </script>
 

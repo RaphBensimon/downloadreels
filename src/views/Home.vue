@@ -30,6 +30,20 @@ export default {
 			loading: false,
 		}
 	},
+	head: {
+		title: function() {
+			return {
+				   inner: this.$route.meta.title,
+				   separator: ' '
+     		}
+		},
+		 meta: function() {
+			 return [
+				{ name: 'description', content: this.$route.meta.description }
+			]
+		}
+
+	},
 	methods: {
 		get_videos: function(e){
 			var t = this;

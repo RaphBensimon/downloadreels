@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<header>
-			<a href="/"><h1 class="gineso">Download<span class="blue">REELS</span>.com</span></h1></a>
+			<a href="/"><h2 class="gineso">Download<span class="blue">REELS</span>.com</span></h2></a>
 			<nav :class="{active: nav_active}">
 				<ul>
 					<li>
@@ -76,8 +76,9 @@ header {
 	border: 1px solid @grey;
 	background-color: @white;
 }
-header h1 {
+header h2 {
 	border-radius: @round;
+	font-size: 32px;
 	margin: 17px 0 10px 0;
 }
 header nav {

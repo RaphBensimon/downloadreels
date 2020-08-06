@@ -79,13 +79,22 @@ ul {
 	margin: 0;
 }
 main {
-	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 10px 10px 0 10px;
-	min-height:calc(~"100% - 117px");
+	padding: 10px 40px 0 40px;
+	min-height:calc(~"100% - 110px");
+}
+
+@media only screen and (max-width: 500px) {
+	main {
+		padding: 10px 10px 0 10px;
+	}
 }
 h1 {
 	font-size: 25px;
+	margin-bottom: 0;
 }
 p {
 	margin-top: 10px;

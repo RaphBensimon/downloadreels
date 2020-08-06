@@ -1,5 +1,16 @@
 <template>
 	<main id="home">
+		<h1>How to download Reels ?</h1>
+		<p>
+			Go to Instagram and open the Reels video you wish to download. <br>
+		</p>
+		<p>
+			If you are on the Instagram application, click on <b>other options</b> and copy the share URL/copy the link. Or if you are using Instagram in a web browser, open the Reels video in a new tab and copy the Reels video link from the web browser URL bar.
+			and <b>paste the Reels video link</b> into the input at <router-link class="link" v-on:click.native="nav_open()" to="/">Home</router-link>, and click/press the <b>« Download »</b> button.	
+		</p>	
+		<p>
+			The Instagram Reels video will play, and there is a "Download" button just below it, so just touch or click on it, and the Instagram Reels video will be saved to your device.
+		</p>
 		<form v-if="!loading && !url_download" v-on:submit="get_videos()">
 			<input placeholder="Ex: https://www.instagram.com/p/CDYt6BdKgG9/" required type="text" v-model="url_video">
 			<button>
@@ -88,14 +99,10 @@ export default {
 
 <style lang="less" scoped>
 @import '@/assets/css/common.less';
-#home {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
 form {
 	width: 100%;
-	max-width: 400px;
+	align-self: center;
+	margin-top: 20px;
 	background-color: @white;
 	border-radius: @round;
 	padding: 20px;

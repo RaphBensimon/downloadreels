@@ -35,9 +35,6 @@ export default {
 
 <style lang="less" scoped>
 @import '@/assets/css/common.less';
-#privacy {
-	padding-top: 20px;
-}
 h2 {
 	margin: 0;
 	text-align: center;

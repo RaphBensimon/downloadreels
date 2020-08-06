@@ -18,13 +18,6 @@
 							<img src="@/assets/img/newspaper-outline.svg" class="outline_icon svg" alt="Blog svg">
 						</router-link>
 					</li>
-					<li>
-						<router-link v-on:click.native="nav_open()" to="/how-to-download-reels">
-							How to download
-							<img src="@/assets/img/help-circle.svg" alt="How svg" class="help_icon svg">
-							<img src="@/assets/img/help-circle-outline.svg" alt="How svg" class="help_icon outline_icon svg">
-						</router-link>
-					</li>
 				</ul>
 			</nav>
 			<div id="hamburger" :class="{active: nav_active}" v-on:click="nav_open()">
@@ -72,14 +65,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 40px;
+	padding: 10px 40px;
 	border: 1px solid @grey;
 	background-color: @white;
 }
 header h2 {
 	border-radius: @round;
 	font-size: 32px;
-	margin: 17px 0 10px 0;
+	margin: 0;
 }
 header nav {
 	z-index: 2;
@@ -184,7 +177,7 @@ footer ul li a {
 	font-weight: 600;
 	font-size: 12px;
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 500px) {
 	header {
 		justify-content: center;
 	}

@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Blog from '../views/Blog.vue'
-import How_to_download from '../views/How_to_download.vue'
 import Privacy from '../views/Privacy.vue'
 import Contact from '../views/Contact.vue'
 import error_404 from '../views/error_404.vue'
@@ -16,8 +15,8 @@ Vue.use(VueRouter)
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: 'Download Reels Instagram',
-			description: 'Download Reels Instagram Free in one click download.'
+			title: 'Download Reels Video Instagram',
+			description: 'Download Reels Video Instagram Free in one click download.'
 		}
 	},
 	{
@@ -29,15 +28,7 @@ Vue.use(VueRouter)
 			description: 'Find the latest Instagram Reels news and updates. Browse featured articles and topics to learn more about what Instagram Reels has to offer.'
 		}
 	},
-	{
-		path: '/how-to-download-reels',
-		name: 'How_to_download',
-		component: How_to_download,
-		meta: {
-			title: 'How to download reels instagram',
-			description: ' How to download Reels Instagram on PC, Android or IOS.'
-		}
-	},
+
 	{
 		path: '/privacy',
 		name: 'Privacy',
